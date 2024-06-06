@@ -49,9 +49,9 @@
       targetConnections="id-877163f83cde4423a8659c9a9de002f4">
     <bounds
         x="-36"
-        y="702"
+        y="693"
         width="137"
-        height="55"/>
+        height="73"/>
     <archimateElement
         xsi:type="archimate:CourseOfAction"
         href="CourseOfAction_id-332da084b53d42e1be0d8631a2c5de64.xml#id-332da084b53d42e1be0d8631a2c5de64"/>
@@ -304,9 +304,9 @@
       targetConnections="id-1759369df8df48e4b97ef6069fdcad4d">
     <bounds
         x="348"
-        y="697"
+        y="693"
         width="137"
-        height="66"/>
+        height="73"/>
     <archimateElement
         xsi:type="archimate:CourseOfAction"
         href="CourseOfAction_id-648c3056fa68460ea3502d651edb6192.xml#id-648c3056fa68460ea3502d651edb6192"/>
