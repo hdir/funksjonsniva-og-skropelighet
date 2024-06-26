@@ -6,6 +6,6 @@
       xsi:type="archimate:Junction"
       href="Junction_id-951d44a12d8a440e940204bf805a8841.xml#id-951d44a12d8a440e940204bf805a8841"/>
   <target
-      xsi:type="archimate:CourseOfAction"
-      href="CourseOfAction_id-a59bbf1daebc43f1a64de59404d1373b.xml#id-a59bbf1daebc43f1a64de59404d1373b"/>
+      xsi:type="archimate:Capability"
+      href="Capability_id-b5efd104c4a247b1ad4597961b794ca6.xml#id-b5efd104c4a247b1ad4597961b794ca6"/>
 </archimate:AssociationRelationship>
