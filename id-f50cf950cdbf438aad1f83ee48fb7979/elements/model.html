@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Felles vurdering av skrøpelighet</title>
+
+	<!-- JQUERY -->
+	<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Felles vurdering av skr&#248;pelighet</b>
+
+            <!-- If a View with Viewpoint -->
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+                       <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-purpose"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+						<li role="presentation"><a href="#query" aria-controls="query" role="tab" data-toggle="tab" class="i18n-query"></a></li>
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap"></div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="query">
+						<br>
+						<style>
+						#myprompt {
+						    width: 80%;
+						    font-family: Consolas,Monaco, monospace;
+						}
+						</style>
+
+						<div id='myconsole'></div>
+
+						<p>
+							<tt><span id="useid">alasql</span> &gt;</tt> <input id='myprompt' autofocus/> 
+						</p>
+
+						<script src='../../lib/alasql/alasql.min.js'></script>
+
+						<script>
+							function decodeURL(s) {
+								return decodeURIComponent(s.replace(/\+/g, "%20"));
+							}
+
+							var first = decodeURI(location.search.substr(1));
+						 	alasql.options.logtarget = 'myconsole';
+							alasql.prompt('myprompt','useid');
+							alasql.prompt('myprompt','useid', first);
+
+							var dataElements = [ ];	  
+						  	var dataProperties = [ ];
+						 	var dataRelationships = [ ];
+						 	var dataViews = [ ];
+						 	var dataViewsContent = [ ];
+						 	var dataFolders = [ ];
+						 	var dataFoldersContent = [ ];
+
+							dataFolders.push({id:"id-f50cf950cdbf438aad1f83ee48fb7979", type:"ArchimateModel", name:decodeURL("Felles+vurdering+av+skr%C3%B8pelighet"), documentation:decodeURL("")});
+								dataFoldersContent.push({folderid:"id-f50cf950cdbf438aad1f83ee48fb7979", contentid:"id-7312107da76540fead8297d71f5f2708", contenttype:"Folder"});
+								dataFolders.push({id:"id-7312107da76540fead8297d71f5f2708", type:"Folder", name:decodeURL("Strategy"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-7312107da76540fead8297d71f5f2708", contentid:"id-648c3056fa68460ea3502d651edb6192", contenttype:"CourseOfAction"});
+										dataElements.push({id:"id-648c3056fa68460ea3502d651edb6192", type:"CourseOfAction", specialization:decodeURL(""), name:decodeURL("Utarbeide+samhandling%2Fsamarbeids-verkt%C3%B8y"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-7312107da76540fead8297d71f5f2708", contentid:"id-726944ada54843529f3e901ec0a0a708", contenttype:"CourseOfAction"});
+										dataElements.push({id:"id-726944ada54843529f3e901ec0a0a708", type:"CourseOfAction", specialization:decodeURL(""), name:decodeURL("Etablere+felles+kilde+til+informasjon"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-7312107da76540fead8297d71f5f2708", contentid:"id-e21152b81d174f68b74b2f33a9973d91", contenttype:"CourseOfAction"});
+										dataElements.push({id:"id-e21152b81d174f68b74b2f33a9973d91", type:"CourseOfAction", specialization:decodeURL(""), name:decodeURL("Utarbeide+felles+metode+for+vurdering"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-7312107da76540fead8297d71f5f2708", contentid:"id-4b6f02bc89af46acb07251046104b506", contenttype:"ValueStream"});
+										dataElements.push({id:"id-4b6f02bc89af46acb07251046104b506", type:"ValueStream", specialization:decodeURL(""), name:decodeURL("Behandling+hjemme"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-7312107da76540fead8297d71f5f2708", contentid:"id-332da084b53d42e1be0d8631a2c5de64", contenttype:"CourseOfAction"});
+										dataElements.push({id:"id-332da084b53d42e1be0d8631a2c5de64", type:"CourseOfAction", specialization:decodeURL(""), name:decodeURL("Utarbeide+felles+spr%C3%A5k%2Fkategori+for+vurdering"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-7312107da76540fead8297d71f5f2708", contentid:"id-d41b2e22cdd04ee88445ebd42b6ba845", contenttype:"Capability"});
+										dataElements.push({id:"id-d41b2e22cdd04ee88445ebd42b6ba845", type:"Capability", specialization:decodeURL(""), name:decodeURL("Funksjonalitet+i+EPJ"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-7312107da76540fead8297d71f5f2708", contentid:"id-1dec3be5491941a08e4637152d5d09e2", contenttype:"ValueStream"});
+										dataElements.push({id:"id-1dec3be5491941a08e4637152d5d09e2", type:"ValueStream", specialization:decodeURL(""), name:decodeURL("Ikke+under+behandling"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-7312107da76540fead8297d71f5f2708", contentid:"id-6ad21d6453734488a4df191b947cc5db", contenttype:"CourseOfAction"});
+										dataElements.push({id:"id-6ad21d6453734488a4df191b947cc5db", type:"CourseOfAction", specialization:decodeURL(""), name:decodeURL("Etablere+felles+retningslinjer+for+behandling+og+forebygging"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-7312107da76540fead8297d71f5f2708", contentid:"id-121aa791ed354a17a0b6024a4f8dc340", contenttype:"Capability"});
+										dataElements.push({id:"id-121aa791ed354a17a0b6024a4f8dc340", type:"Capability", specialization:decodeURL(""), name:decodeURL("API+integrasjon"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-7312107da76540fead8297d71f5f2708", contentid:"id-f7a2bdca43524868b4d7ebe84f1ad554", contenttype:"Capability"});
+										dataElements.push({id:"id-f7a2bdca43524868b4d7ebe84f1ad554", type:"Capability", specialization:decodeURL(""), name:decodeURL("Meldinger+%28PLO+dialog%29"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-7312107da76540fead8297d71f5f2708", contentid:"id-26b06701addb4ac9a1c2cbdba76d32e2", contenttype:"ValueStream"});
+										dataElements.push({id:"id-26b06701addb4ac9a1c2cbdba76d32e2", type:"ValueStream", specialization:decodeURL(""), name:decodeURL("Behandling+i+kommune-helsetjenesten"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-7312107da76540fead8297d71f5f2708", contentid:"id-fdacdd30637a44999cea191c526080c3", contenttype:"ValueStream"});
+										dataElements.push({id:"id-fdacdd30637a44999cea191c526080c3", type:"ValueStream", specialization:decodeURL(""), name:decodeURL("Behandling+p%C3%A5+sykehus"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-7312107da76540fead8297d71f5f2708", contentid:"id-405f0e657b9f4fe9bf866df44b3961fc", contenttype:"CourseOfAction"});
+										dataElements.push({id:"id-405f0e657b9f4fe9bf866df44b3961fc", type:"CourseOfAction", specialization:decodeURL(""), name:decodeURL("Kvalitetssikrede+behandlings-forl%C3%B8p+for+skr%C3%B8pelighet"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-7312107da76540fead8297d71f5f2708", contentid:"id-9cbc0826addc418da5172bef510c18be", contenttype:"CourseOfAction"});
+										dataElements.push({id:"id-9cbc0826addc418da5172bef510c18be", type:"CourseOfAction", specialization:decodeURL(""), name:decodeURL("Course+of+Action"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-7312107da76540fead8297d71f5f2708", contentid:"id-b4df94b0adc346d79b8f418aa060e99b", contenttype:"Capability"});
+										dataElements.push({id:"id-b4df94b0adc346d79b8f418aa060e99b", type:"Capability", specialization:decodeURL(""), name:decodeURL("SMART+on+FHIR"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-7312107da76540fead8297d71f5f2708", contentid:"id-30c8442af3f64296ab86dad34c3578e5", contenttype:"ValueStream"});
+										dataElements.push({id:"id-30c8442af3f64296ab86dad34c3578e5", type:"ValueStream", specialization:decodeURL(""), name:decodeURL("Behandling+hos+fastlege"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-7312107da76540fead8297d71f5f2708", contentid:"id-c3adb4e8f1834a248a4099e5291bf5da", contenttype:"CourseOfAction"});
+										dataElements.push({id:"id-c3adb4e8f1834a248a4099e5291bf5da", type:"CourseOfAction", specialization:decodeURL(""), name:decodeURL("Etablere+felles+verkt%C3%B8y+for+planlegging"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-7312107da76540fead8297d71f5f2708", contentid:"id-9f6addf88dad40b49f64bdf1496d9698", contenttype:"CourseOfAction"});
+										dataElements.push({id:"id-9f6addf88dad40b49f64bdf1496d9698", type:"CourseOfAction", specialization:decodeURL(""), name:decodeURL("Kvalitetsikrede+egenmestrings-tiltak"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-7312107da76540fead8297d71f5f2708", contentid:"id-aead656dd7e34f9c9551bfa90340c453", contenttype:"CourseOfAction"});
+										dataElements.push({id:"id-aead656dd7e34f9c9551bfa90340c453", type:"CourseOfAction", specialization:decodeURL(""), name:decodeURL("Oversikt+over+eksisterende+helsehjelp+og+andre+tjenester"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-7312107da76540fead8297d71f5f2708", contentid:"id-b5efd104c4a247b1ad4597961b794ca6", contenttype:"Capability"});
+										dataElements.push({id:"id-b5efd104c4a247b1ad4597961b794ca6", type:"Capability", specialization:decodeURL(""), name:decodeURL("Portall%C3%B8sning"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-7312107da76540fead8297d71f5f2708", contentid:"id-e67d90fdfb504adfab4df1145266e995", contenttype:"CourseOfAction"});
+										dataElements.push({id:"id-e67d90fdfb504adfab4df1145266e995", type:"CourseOfAction", specialization:decodeURL(""), name:decodeURL("Etablere+felles+verkt%C3%B8y+for+vurdering"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-7312107da76540fead8297d71f5f2708", contentid:"id-b0d47cdf2481478695793e60d7726fbb", contenttype:"CourseOfAction"});
+										dataElements.push({id:"id-b0d47cdf2481478695793e60d7726fbb", type:"CourseOfAction", specialization:decodeURL(""), name:decodeURL("Felles+plan+%28DBEP%29"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-f50cf950cdbf438aad1f83ee48fb7979", contentid:"id-da89ece5c4b444e6ac8c39a7cc9dd9d8", contenttype:"Folder"});
+								dataFolders.push({id:"id-da89ece5c4b444e6ac8c39a7cc9dd9d8", type:"Folder", name:decodeURL("Business"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-f50cf950cdbf438aad1f83ee48fb7979", contentid:"id-96a0eeda94b841669df7885a987c1041", contenttype:"Folder"});
+								dataFolders.push({id:"id-96a0eeda94b841669df7885a987c1041", type:"Folder", name:decodeURL("Application"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-f50cf950cdbf438aad1f83ee48fb7979", contentid:"id-330a67aaedc34f4bb1d737cb11ce0226", contenttype:"Folder"});
+								dataFolders.push({id:"id-330a67aaedc34f4bb1d737cb11ce0226", type:"Folder", name:decodeURL("Technology+%26+Physical"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-f50cf950cdbf438aad1f83ee48fb7979", contentid:"id-1a218e5a5ee04f4cadeafc86e089c178", contenttype:"Folder"});
+								dataFolders.push({id:"id-1a218e5a5ee04f4cadeafc86e089c178", type:"Folder", name:decodeURL("Motivation"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-1a218e5a5ee04f4cadeafc86e089c178", contentid:"id-dd196b33e3bd4e9586fb6f8dc773c901", contenttype:"Goal"});
+										dataElements.push({id:"id-dd196b33e3bd4e9586fb6f8dc773c901", type:"Goal", specialization:decodeURL(""), name:decodeURL("Rett+behandling+og+oppf%C3%B8lging+til+rett+tid.+Igjennom+%C3%A5+bidra+til+%C3%A5+redusere+over-+og+underbehandling+av+eldre+med+skr%C3%B8pelighet.+"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-1a218e5a5ee04f4cadeafc86e089c178", contentid:"id-daa4d9763ed343eeb92ccaeffafb2f9c", contenttype:"Outcome"});
+										dataElements.push({id:"id-daa4d9763ed343eeb92ccaeffafb2f9c", type:"Outcome", specialization:decodeURL(""), name:decodeURL("Avdekke+behov+tidlig+og+sette+inn+hensiktsmessige+tiltak.+Bidrar+til+mestring+for+bruker+og+redusert+ressursbruk+i+helsetjenesten."), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-1a218e5a5ee04f4cadeafc86e089c178", contentid:"id-d1f27cf8bdc9422383a26e5c456081e6", contenttype:"Outcome"});
+										dataElements.push({id:"id-d1f27cf8bdc9422383a26e5c456081e6", type:"Outcome", specialization:decodeURL(""), name:decodeURL("Gode+epikriser"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-1a218e5a5ee04f4cadeafc86e089c178", contentid:"id-160e95ebc4754e5fa0a61542c2c0f475", contenttype:"Outcome"});
+										dataElements.push({id:"id-160e95ebc4754e5fa0a61542c2c0f475", type:"Outcome", specialization:decodeURL(""), name:decodeURL("Unng%C3%A5+un%C3%B8dvendige+innleggelser+og+reinnleggelser"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-1a218e5a5ee04f4cadeafc86e089c178", contentid:"id-8e15745455f9413581b3d9ecc0ac5d09", contenttype:"Outcome"});
+										dataElements.push({id:"id-8e15745455f9413581b3d9ecc0ac5d09", type:"Outcome", specialization:decodeURL(""), name:decodeURL("Bedre+informasjonsflyt+og+beslutningsst%C3%B8tte+for+behandling+og+oppf%C3%B8lging+av+eldre+med+skr%C3%B8pelighet"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-1a218e5a5ee04f4cadeafc86e089c178", contentid:"id-cadafe8393974360af6b6b9015fb6de4", contenttype:"Outcome"});
+										dataElements.push({id:"id-cadafe8393974360af6b6b9015fb6de4", type:"Outcome", specialization:decodeURL(""), name:decodeURL("Felles+funksjons-vurdering+i+hele+helsetjenesten"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-1a218e5a5ee04f4cadeafc86e089c178", contentid:"id-2a93d658a2e040d4817e212b7007088c", contenttype:"Goal"});
+										dataElements.push({id:"id-2a93d658a2e040d4817e212b7007088c", type:"Goal", specialization:decodeURL(""), name:decodeURL("%C3%98kt+pasientsikkerhet+og+livskvalitet+for+skr%C3%B8pelige+eldre+og+en+mer+b%C3%A6rekraftig+ressursbruk"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-1a218e5a5ee04f4cadeafc86e089c178", contentid:"id-4dbb26c682cc4dc19d71a7f5290f5294", contenttype:"Goal"});
+										dataElements.push({id:"id-4dbb26c682cc4dc19d71a7f5290f5294", type:"Goal", specialization:decodeURL(""), name:decodeURL("Forebygge+funksjonsfall+og+skr%C3%B8pelighetBidrar+til+mestring+for+bruker+og+redusert+ressursbruk+i+helsetjenesten."), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-1a218e5a5ee04f4cadeafc86e089c178", contentid:"id-6f1c012c9cd8496ea6cdf392c6637ecb", contenttype:"Goal"});
+										dataElements.push({id:"id-6f1c012c9cd8496ea6cdf392c6637ecb", type:"Goal", specialization:decodeURL(""), name:decodeURL("Legge+til+rette+for+bedre+samarbeid+p%C3%A5+tvers+av+sykehus+og+kommune+for+eldre+med+skr%C3%B8pelighet"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-1a218e5a5ee04f4cadeafc86e089c178", contentid:"id-245f0da376c8439a9a54986668765552", contenttype:"Outcome"});
+										dataElements.push({id:"id-245f0da376c8439a9a54986668765552", type:"Outcome", specialization:decodeURL(""), name:decodeURL("Tilstrekkelig+og+forst%C3%A5elig+informasjon+i+alle+deler+av+pasientbehandlingen"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-f50cf950cdbf438aad1f83ee48fb7979", contentid:"id-ceca4078a1c24e9382305bbf8e827274", contenttype:"Folder"});
+								dataFolders.push({id:"id-ceca4078a1c24e9382305bbf8e827274", type:"Folder", name:decodeURL("Implementation+%26+Migration"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-f50cf950cdbf438aad1f83ee48fb7979", contentid:"id-7e3c38f929a143a987c5bc9fd98402bd", contenttype:"Folder"});
+								dataFolders.push({id:"id-7e3c38f929a143a987c5bc9fd98402bd", type:"Folder", name:decodeURL("Other"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-7e3c38f929a143a987c5bc9fd98402bd", contentid:"id-470ce24a5bef4c4e9a1dcae8fe1842aa", contenttype:"Junction"});
+										dataElements.push({id:"id-470ce24a5bef4c4e9a1dcae8fe1842aa", type:"Junction", specialization:decodeURL(""), name:decodeURL("Junction"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-7e3c38f929a143a987c5bc9fd98402bd", contentid:"id-951d44a12d8a440e940204bf805a8841", contenttype:"Junction"});
+										dataElements.push({id:"id-951d44a12d8a440e940204bf805a8841", type:"Junction", specialization:decodeURL(""), name:decodeURL("Junction"), documentation:decodeURL("")});
+
+								dataFoldersContent.push({folderid:"id-f50cf950cdbf438aad1f83ee48fb7979", contentid:"id-f1afc25755c249e8bd71f44401c64554", contenttype:"Folder"});
+								dataFolders.push({id:"id-f1afc25755c249e8bd71f44401c64554", type:"Folder", name:decodeURL("Relations"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-70add1079ae441c58a5374536c157842", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-70add1079ae441c58a5374536c157842", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-e67d90fdfb504adfab4df1145266e995", targetid:"id-e21152b81d174f68b74b2f33a9973d91"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-18ff4bf016a849fa990727fd32c17d85", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-18ff4bf016a849fa990727fd32c17d85", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-648c3056fa68460ea3502d651edb6192", targetid:"id-726944ada54843529f3e901ec0a0a708"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-01d37ba310354217a960684b7dfa18c0", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-01d37ba310354217a960684b7dfa18c0", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-470ce24a5bef4c4e9a1dcae8fe1842aa", targetid:"id-b4df94b0adc346d79b8f418aa060e99b"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-e49abeddfcb44d2fab5f1f0df5d313f2", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-e49abeddfcb44d2fab5f1f0df5d313f2", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-d41b2e22cdd04ee88445ebd42b6ba845", targetid:"id-470ce24a5bef4c4e9a1dcae8fe1842aa"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-88746e8294664192b52c116c2da0f5a2", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-88746e8294664192b52c116c2da0f5a2", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-8e15745455f9413581b3d9ecc0ac5d09", targetid:"id-e67d90fdfb504adfab4df1145266e995"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-76c9843e30594ef086916d100e20ff69", contenttype:"FlowRelationship"});
+										dataRelationships.push({id:"id-76c9843e30594ef086916d100e20ff69", type:"FlowRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-30c8442af3f64296ab86dad34c3578e5", targetid:"id-fdacdd30637a44999cea191c526080c3"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-a154bf945a6f4eb98b9f18f11c65883f", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-a154bf945a6f4eb98b9f18f11c65883f", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-951d44a12d8a440e940204bf805a8841", targetid:"id-f7a2bdca43524868b4d7ebe84f1ad554"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-ddc749b1d9134d8daf85b60cf88229e3", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-ddc749b1d9134d8daf85b60cf88229e3", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-6ad21d6453734488a4df191b947cc5db", targetid:"id-405f0e657b9f4fe9bf866df44b3961fc"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-702e23e26d92412f8843eb8c276a148c", contenttype:"FlowRelationship"});
+										dataRelationships.push({id:"id-702e23e26d92412f8843eb8c276a148c", type:"FlowRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-1dec3be5491941a08e4637152d5d09e2", targetid:"id-30c8442af3f64296ab86dad34c3578e5"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-5cf3ee14224740ef8b164d4c1067e759", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-5cf3ee14224740ef8b164d4c1067e759", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-951d44a12d8a440e940204bf805a8841", targetid:"id-b5efd104c4a247b1ad4597961b794ca6"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-a464fcf7d6974b48b85b83cb9683de2f", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-a464fcf7d6974b48b85b83cb9683de2f", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-160e95ebc4754e5fa0a61542c2c0f475", targetid:"id-8e15745455f9413581b3d9ecc0ac5d09"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-d86e5d8659f5417dad2cddc184d67d59", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-d86e5d8659f5417dad2cddc184d67d59", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-d1f27cf8bdc9422383a26e5c456081e6", targetid:"id-245f0da376c8439a9a54986668765552"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-d7394a4899a54cb3ada43b862c4d46a9", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-d7394a4899a54cb3ada43b862c4d46a9", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-cadafe8393974360af6b6b9015fb6de4", targetid:"id-8e15745455f9413581b3d9ecc0ac5d09"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-8d931f3d11984421ad4612714e13223f", contenttype:"FlowRelationship"});
+										dataRelationships.push({id:"id-8d931f3d11984421ad4612714e13223f", type:"FlowRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-30c8442af3f64296ab86dad34c3578e5", targetid:"id-26b06701addb4ac9a1c2cbdba76d32e2"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-40626a5332f14abfb4db031251ba7096", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-40626a5332f14abfb4db031251ba7096", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-e67d90fdfb504adfab4df1145266e995", targetid:"id-cadafe8393974360af6b6b9015fb6de4"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-6f72a8946ddd458d8834c7f268cecbbb", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-6f72a8946ddd458d8834c7f268cecbbb", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-160e95ebc4754e5fa0a61542c2c0f475", targetid:"id-6f1c012c9cd8496ea6cdf392c6637ecb"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-5b271f185d664c1093aee939846d5d01", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-5b271f185d664c1093aee939846d5d01", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-6ad21d6453734488a4df191b947cc5db", targetid:"id-daa4d9763ed343eeb92ccaeffafb2f9c"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-9f0f968e50c842ed8741aa6f8c5c7e6e", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-9f0f968e50c842ed8741aa6f8c5c7e6e", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-e67d90fdfb504adfab4df1145266e995", targetid:"id-648c3056fa68460ea3502d651edb6192"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-c92f168429144ada95e4bcd00928e424", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-c92f168429144ada95e4bcd00928e424", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-8e15745455f9413581b3d9ecc0ac5d09", targetid:"id-d1f27cf8bdc9422383a26e5c456081e6"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-067c0f1e167a4910a58fa4d31b04cc57", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-067c0f1e167a4910a58fa4d31b04cc57", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-dd196b33e3bd4e9586fb6f8dc773c901", targetid:"id-2a93d658a2e040d4817e212b7007088c"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-eb8933f7f90843deba72eb3230a41f2c", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-eb8933f7f90843deba72eb3230a41f2c", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-648c3056fa68460ea3502d651edb6192", targetid:"id-e21152b81d174f68b74b2f33a9973d91"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-7642cf5539e6445d999974ccf060609b", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-7642cf5539e6445d999974ccf060609b", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-daa4d9763ed343eeb92ccaeffafb2f9c", targetid:"id-4dbb26c682cc4dc19d71a7f5290f5294"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-0bec26b9f7944f638651fb63217d7aa2", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-0bec26b9f7944f638651fb63217d7aa2", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-648c3056fa68460ea3502d651edb6192", targetid:"id-951d44a12d8a440e940204bf805a8841"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-66a4859a23d14bf38985e3cea639fd78", contenttype:"FlowRelationship"});
+										dataRelationships.push({id:"id-66a4859a23d14bf38985e3cea639fd78", type:"FlowRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-1dec3be5491941a08e4637152d5d09e2", targetid:"id-fdacdd30637a44999cea191c526080c3"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-0fed130bd5c74da0910ef85fcc213648", contenttype:"FlowRelationship"});
+										dataRelationships.push({id:"id-0fed130bd5c74da0910ef85fcc213648", type:"FlowRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-fdacdd30637a44999cea191c526080c3", targetid:"id-30c8442af3f64296ab86dad34c3578e5"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-f1a22a1bc70b44db873bb997a1908822", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-f1a22a1bc70b44db873bb997a1908822", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-951d44a12d8a440e940204bf805a8841", targetid:"id-d41b2e22cdd04ee88445ebd42b6ba845"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-de26c69e1f9d4f378564249761c33b28", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-de26c69e1f9d4f378564249761c33b28", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-cadafe8393974360af6b6b9015fb6de4", targetid:"id-4dbb26c682cc4dc19d71a7f5290f5294"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-fd3b727d470641f493e5c7c64c06531e", contenttype:"FlowRelationship"});
+										dataRelationships.push({id:"id-fd3b727d470641f493e5c7c64c06531e", type:"FlowRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-26b06701addb4ac9a1c2cbdba76d32e2", targetid:"id-30c8442af3f64296ab86dad34c3578e5"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-6ddc3aba567f456b8abc7328881a6e40", contenttype:"FlowRelationship"});
+										dataRelationships.push({id:"id-6ddc3aba567f456b8abc7328881a6e40", type:"FlowRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-1dec3be5491941a08e4637152d5d09e2", targetid:"id-26b06701addb4ac9a1c2cbdba76d32e2"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-92ae4bad17a94016b84c06f81d5a5df0", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-92ae4bad17a94016b84c06f81d5a5df0", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-daa4d9763ed343eeb92ccaeffafb2f9c", targetid:"id-160e95ebc4754e5fa0a61542c2c0f475"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-951dac4bd03a48128facaa419be3289b", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-951dac4bd03a48128facaa419be3289b", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-cadafe8393974360af6b6b9015fb6de4", targetid:"id-6f1c012c9cd8496ea6cdf392c6637ecb"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-dd151400031f4d1d90aaf03dab2f70d0", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-dd151400031f4d1d90aaf03dab2f70d0", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-26b06701addb4ac9a1c2cbdba76d32e2", targetid:"id-4b6f02bc89af46acb07251046104b506"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-0c23e79c4dbe416baa9703a3ab2b7699", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-0c23e79c4dbe416baa9703a3ab2b7699", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-e21152b81d174f68b74b2f33a9973d91", targetid:"id-332da084b53d42e1be0d8631a2c5de64"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-68313b7e2e864a1cba8d7a5e984ab54e", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-68313b7e2e864a1cba8d7a5e984ab54e", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-648c3056fa68460ea3502d651edb6192", targetid:"id-8e15745455f9413581b3d9ecc0ac5d09"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-5bde93e026b94bc680bf9ba979a87ff3", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-5bde93e026b94bc680bf9ba979a87ff3", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-30c8442af3f64296ab86dad34c3578e5", targetid:"id-4b6f02bc89af46acb07251046104b506"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-5bfba21a564a4ac7ba42eb2dadd85b46", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-5bfba21a564a4ac7ba42eb2dadd85b46", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-160e95ebc4754e5fa0a61542c2c0f475", targetid:"id-cadafe8393974360af6b6b9015fb6de4"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-dd906e86c7ce48b1a50c1a7344ab578c", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-dd906e86c7ce48b1a50c1a7344ab578c", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-6f1c012c9cd8496ea6cdf392c6637ecb", targetid:"id-2a93d658a2e040d4817e212b7007088c"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-ad11eda2d7864c17a54311801b0c2bf8", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-ad11eda2d7864c17a54311801b0c2bf8", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-470ce24a5bef4c4e9a1dcae8fe1842aa", targetid:"id-121aa791ed354a17a0b6024a4f8dc340"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-69548d984de848de84abc5f0a838cfd1", contenttype:"FlowRelationship"});
+										dataRelationships.push({id:"id-69548d984de848de84abc5f0a838cfd1", type:"FlowRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-fdacdd30637a44999cea191c526080c3", targetid:"id-26b06701addb4ac9a1c2cbdba76d32e2"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-d1f08d0530064ec5913faab0cfe79c04", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-d1f08d0530064ec5913faab0cfe79c04", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-8e15745455f9413581b3d9ecc0ac5d09", targetid:"id-245f0da376c8439a9a54986668765552"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-c31ef5b102834c55afe4f6fa4f0a7b3b", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-c31ef5b102834c55afe4f6fa4f0a7b3b", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-e21152b81d174f68b74b2f33a9973d91", targetid:"id-6ad21d6453734488a4df191b947cc5db"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-ed3c0623d89f4044828e3a9a07a9f98f", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-ed3c0623d89f4044828e3a9a07a9f98f", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-daa4d9763ed343eeb92ccaeffafb2f9c", targetid:"id-dd196b33e3bd4e9586fb6f8dc773c901"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-f2600b030c7846abbf954a3a50d5ff38", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-f2600b030c7846abbf954a3a50d5ff38", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-c3adb4e8f1834a248a4099e5291bf5da", targetid:"id-160e95ebc4754e5fa0a61542c2c0f475"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-2ad9eb570174404a985e1c06d4ad8355", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-2ad9eb570174404a985e1c06d4ad8355", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-6ad21d6453734488a4df191b947cc5db", targetid:"id-9f6addf88dad40b49f64bdf1496d9698"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-215aea930ce44a55bfe2cac13bbe43b2", contenttype:"AggregationRelationship"});
+										dataRelationships.push({id:"id-215aea930ce44a55bfe2cac13bbe43b2", type:"AggregationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-fdacdd30637a44999cea191c526080c3", targetid:"id-4b6f02bc89af46acb07251046104b506"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-fad644f302344ea0912c1c99f1d6218e", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-fad644f302344ea0912c1c99f1d6218e", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-aead656dd7e34f9c9551bfa90340c453", targetid:"id-c3adb4e8f1834a248a4099e5291bf5da"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-825cbdb6a59040fdbed57e63fc6fac16", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-825cbdb6a59040fdbed57e63fc6fac16", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-aead656dd7e34f9c9551bfa90340c453", targetid:"id-daa4d9763ed343eeb92ccaeffafb2f9c"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-ed14e9c0fa1440b0b768f47a8ceef9e7", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-ed14e9c0fa1440b0b768f47a8ceef9e7", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-6f1c012c9cd8496ea6cdf392c6637ecb", targetid:"id-8e15745455f9413581b3d9ecc0ac5d09"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-d3aeb0a8578e4002900c1a8f62080083", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-d3aeb0a8578e4002900c1a8f62080083", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-4dbb26c682cc4dc19d71a7f5290f5294", targetid:"id-2a93d658a2e040d4817e212b7007088c"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-e1b0b3f3d6194614a1b2f5341435ec32", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-e1b0b3f3d6194614a1b2f5341435ec32", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-6ad21d6453734488a4df191b947cc5db", targetid:"id-160e95ebc4754e5fa0a61542c2c0f475"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-6f9fd8e45ab8454ba0a1307fd3001d27", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-6f9fd8e45ab8454ba0a1307fd3001d27", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-b0d47cdf2481478695793e60d7726fbb", targetid:"id-b5efd104c4a247b1ad4597961b794ca6"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-5cba498458074973b9da224c5fa8f3c4", contenttype:"FlowRelationship"});
+										dataRelationships.push({id:"id-5cba498458074973b9da224c5fa8f3c4", type:"FlowRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-26b06701addb4ac9a1c2cbdba76d32e2", targetid:"id-fdacdd30637a44999cea191c526080c3"});
+									dataFoldersContent.push({folderid:"id-f1afc25755c249e8bd71f44401c64554", contentid:"id-2cb3c15f2389475e8ba0eafd03462a2a", contenttype:"AssociationRelationship"});
+										dataRelationships.push({id:"id-2cb3c15f2389475e8ba0eafd03462a2a", type:"AssociationRelationship", specialization:decodeURL(""), name:decodeURL(""), documentation:decodeURL(""), sourceid:"id-4dbb26c682cc4dc19d71a7f5290f5294", targetid:"id-160e95ebc4754e5fa0a61542c2c0f475"});
+
+								dataFoldersContent.push({folderid:"id-f50cf950cdbf438aad1f83ee48fb7979", contentid:"id-7c268a2c445e4b0aabc04ef180c1438d", contenttype:"Folder"});
+								dataFolders.push({id:"id-7c268a2c445e4b0aabc04ef180c1438d", type:"Folder", name:decodeURL("Views"), documentation:decodeURL("")});
+									dataFoldersContent.push({folderid:"id-7c268a2c445e4b0aabc04ef180c1438d", contentid:"id-26e530665f444a0b9a54aae506c5d733", contenttype:"ArchimateDiagramModel"});
+										dataViews.push({id:"id-26e530665f444a0b9a54aae506c5d733", type:"ArchimateDiagramModel", name:decodeURL("Verdikjede"), documentation:decodeURL("")});
+												dataViewsContent.push({viewid:"id-26e530665f444a0b9a54aae506c5d733", contentid:"id-30c8442af3f64296ab86dad34c3578e5", contenttype:"ValueStream"});
+												dataViewsContent.push({viewid:"id-26e530665f444a0b9a54aae506c5d733", contentid:"id-26b06701addb4ac9a1c2cbdba76d32e2", contenttype:"ValueStream"});
+												dataViewsContent.push({viewid:"id-26e530665f444a0b9a54aae506c5d733", contentid:"id-fdacdd30637a44999cea191c526080c3", contenttype:"ValueStream"});
+												dataViewsContent.push({viewid:"id-26e530665f444a0b9a54aae506c5d733", contentid:"id-4b6f02bc89af46acb07251046104b506", contenttype:"ValueStream"});
+												dataViewsContent.push({viewid:"id-26e530665f444a0b9a54aae506c5d733", contentid:"id-1dec3be5491941a08e4637152d5d09e2", contenttype:"ValueStream"});
+
+																		dataViewsContent.push({viewid:"id-26e530665f444a0b9a54aae506c5d733", contentid:"id-8d931f3d11984421ad4612714e13223f", contenttype:"FlowRelationship"});
+																		dataViewsContent.push({viewid:"id-26e530665f444a0b9a54aae506c5d733", contentid:"id-76c9843e30594ef086916d100e20ff69", contenttype:"FlowRelationship"});
+																		dataViewsContent.push({viewid:"id-26e530665f444a0b9a54aae506c5d733", contentid:"id-5bde93e026b94bc680bf9ba979a87ff3", contenttype:"AggregationRelationship"});
+
+																		dataViewsContent.push({viewid:"id-26e530665f444a0b9a54aae506c5d733", contentid:"id-5cba498458074973b9da224c5fa8f3c4", contenttype:"FlowRelationship"});
+																		dataViewsContent.push({viewid:"id-26e530665f444a0b9a54aae506c5d733", contentid:"id-fd3b727d470641f493e5c7c64c06531e", contenttype:"FlowRelationship"});
+																		dataViewsContent.push({viewid:"id-26e530665f444a0b9a54aae506c5d733", contentid:"id-dd151400031f4d1d90aaf03dab2f70d0", contenttype:"AggregationRelationship"});
+
+																		dataViewsContent.push({viewid:"id-26e530665f444a0b9a54aae506c5d733", contentid:"id-69548d984de848de84abc5f0a838cfd1", contenttype:"FlowRelationship"});
+																		dataViewsContent.push({viewid:"id-26e530665f444a0b9a54aae506c5d733", contentid:"id-0fed130bd5c74da0910ef85fcc213648", contenttype:"FlowRelationship"});
+																		dataViewsContent.push({viewid:"id-26e530665f444a0b9a54aae506c5d733", contentid:"id-215aea930ce44a55bfe2cac13bbe43b2", contenttype:"AggregationRelationship"});
+
+																		dataViewsContent.push({viewid:"id-26e530665f444a0b9a54aae506c5d733", contentid:"id-6ddc3aba567f456b8abc7328881a6e40", contenttype:"FlowRelationship"});
+																		dataViewsContent.push({viewid:"id-26e530665f444a0b9a54aae506c5d733", contentid:"id-66a4859a23d14bf38985e3cea639fd78", contenttype:"FlowRelationship"});
+																		dataViewsContent.push({viewid:"id-26e530665f444a0b9a54aae506c5d733", contentid:"id-702e23e26d92412f8843eb8c276a148c", contenttype:"FlowRelationship"});
+
+
+									dataFoldersContent.push({folderid:"id-7c268a2c445e4b0aabc04ef180c1438d", contentid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contenttype:"ArchimateDiagramModel"});
+										dataViews.push({id:"id-5c26b44cc86d4e7abcb674366c74b7fa", type:"ArchimateDiagramModel", name:decodeURL("Tiltak+og+kapabiliteter"), documentation:decodeURL("")});
+												dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-e21152b81d174f68b74b2f33a9973d91", contenttype:"CourseOfAction"});
+												dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-332da084b53d42e1be0d8631a2c5de64", contenttype:"CourseOfAction"});
+												dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-e67d90fdfb504adfab4df1145266e995", contenttype:"CourseOfAction"});
+												dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-726944ada54843529f3e901ec0a0a708", contenttype:"CourseOfAction"});
+												dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-6f1c012c9cd8496ea6cdf392c6637ecb", contenttype:"Goal"});
+												dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-6ad21d6453734488a4df191b947cc5db", contenttype:"CourseOfAction"});
+												dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-4dbb26c682cc4dc19d71a7f5290f5294", contenttype:"Goal"});
+												dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-648c3056fa68460ea3502d651edb6192", contenttype:"CourseOfAction"});
+												dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-cadafe8393974360af6b6b9015fb6de4", contenttype:"Outcome"});
+												dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-160e95ebc4754e5fa0a61542c2c0f475", contenttype:"Outcome"});
+												dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-8e15745455f9413581b3d9ecc0ac5d09", contenttype:"Outcome"});
+												dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-d1f27cf8bdc9422383a26e5c456081e6", contenttype:"Outcome"});
+												dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-245f0da376c8439a9a54986668765552", contenttype:"Outcome"});
+												dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-f7a2bdca43524868b4d7ebe84f1ad554", contenttype:"Capability"});
+												dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-b0d47cdf2481478695793e60d7726fbb", contenttype:"CourseOfAction"});
+												dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-d41b2e22cdd04ee88445ebd42b6ba845", contenttype:"Capability"});
+												dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-b5efd104c4a247b1ad4597961b794ca6", contenttype:"Capability"});
+												dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-951d44a12d8a440e940204bf805a8841", contenttype:"Junction"});
+												dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-121aa791ed354a17a0b6024a4f8dc340", contenttype:"Capability"});
+												dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-b4df94b0adc346d79b8f418aa060e99b", contenttype:"Capability"});
+												dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-470ce24a5bef4c4e9a1dcae8fe1842aa", contenttype:"Junction"});
+												dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-dd196b33e3bd4e9586fb6f8dc773c901", contenttype:"Goal"});
+												dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-daa4d9763ed343eeb92ccaeffafb2f9c", contenttype:"Outcome"});
+												dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-2a93d658a2e040d4817e212b7007088c", contenttype:"Goal"});
+												dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-9f6addf88dad40b49f64bdf1496d9698", contenttype:"CourseOfAction"});
+												dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-405f0e657b9f4fe9bf866df44b3961fc", contenttype:"CourseOfAction"});
+												dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-c3adb4e8f1834a248a4099e5291bf5da", contenttype:"CourseOfAction"});
+												dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-aead656dd7e34f9c9551bfa90340c453", contenttype:"CourseOfAction"});
+
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-0c23e79c4dbe416baa9703a3ab2b7699", contenttype:"AggregationRelationship"});
+
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-70add1079ae441c58a5374536c157842", contenttype:"AggregationRelationship"});
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-40626a5332f14abfb4db031251ba7096", contenttype:"AssociationRelationship"});
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-9f0f968e50c842ed8741aa6f8c5c7e6e", contenttype:"AggregationRelationship"});
+
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-ed14e9c0fa1440b0b768f47a8ceef9e7", contenttype:"AssociationRelationship"});
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-dd906e86c7ce48b1a50c1a7344ab578c", contenttype:"AssociationRelationship"});
+
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-2ad9eb570174404a985e1c06d4ad8355", contenttype:"AggregationRelationship"});
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-ddc749b1d9134d8daf85b60cf88229e3", contenttype:"AggregationRelationship"});
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-e1b0b3f3d6194614a1b2f5341435ec32", contenttype:"AssociationRelationship"});
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-5b271f185d664c1093aee939846d5d01", contenttype:"AssociationRelationship"});
+
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-2cb3c15f2389475e8ba0eafd03462a2a", contenttype:"AssociationRelationship"});
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-d3aeb0a8578e4002900c1a8f62080083", contenttype:"AssociationRelationship"});
+
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-0bec26b9f7944f638651fb63217d7aa2", contenttype:"AssociationRelationship"});
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-18ff4bf016a849fa990727fd32c17d85", contenttype:"AggregationRelationship"});
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-eb8933f7f90843deba72eb3230a41f2c", contenttype:"AssociationRelationship"});
+
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-de26c69e1f9d4f378564249761c33b28", contenttype:"AssociationRelationship"});
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-d7394a4899a54cb3ada43b862c4d46a9", contenttype:"AssociationRelationship"});
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-951dac4bd03a48128facaa419be3289b", contenttype:"AssociationRelationship"});
+
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-6f72a8946ddd458d8834c7f268cecbbb", contenttype:"AssociationRelationship"});
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-a464fcf7d6974b48b85b83cb9683de2f", contenttype:"AssociationRelationship"});
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-5bfba21a564a4ac7ba42eb2dadd85b46", contenttype:"AssociationRelationship"});
+
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-d1f08d0530064ec5913faab0cfe79c04", contenttype:"AggregationRelationship"});
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-c92f168429144ada95e4bcd00928e424", contenttype:"AggregationRelationship"});
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-88746e8294664192b52c116c2da0f5a2", contenttype:"AssociationRelationship"});
+
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-d86e5d8659f5417dad2cddc184d67d59", contenttype:"AssociationRelationship"});
+
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-6f9fd8e45ab8454ba0a1307fd3001d27", contenttype:"AssociationRelationship"});
+
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-e49abeddfcb44d2fab5f1f0df5d313f2", contenttype:"AssociationRelationship"});
+
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-f1a22a1bc70b44db873bb997a1908822", contenttype:"AssociationRelationship"});
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-5cf3ee14224740ef8b164d4c1067e759", contenttype:"AssociationRelationship"});
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-a154bf945a6f4eb98b9f18f11c65883f", contenttype:"AssociationRelationship"});
+
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-ad11eda2d7864c17a54311801b0c2bf8", contenttype:"AssociationRelationship"});
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-01d37ba310354217a960684b7dfa18c0", contenttype:"AssociationRelationship"});
+
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-067c0f1e167a4910a58fa4d31b04cc57", contenttype:"AssociationRelationship"});
+
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-7642cf5539e6445d999974ccf060609b", contenttype:"AssociationRelationship"});
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-ed3c0623d89f4044828e3a9a07a9f98f", contenttype:"AssociationRelationship"});
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-92ae4bad17a94016b84c06f81d5a5df0", contenttype:"AssociationRelationship"});
+
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-f2600b030c7846abbf954a3a50d5ff38", contenttype:"AssociationRelationship"});
+
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-825cbdb6a59040fdbed57e63fc6fac16", contenttype:"AssociationRelationship"});
+																		dataViewsContent.push({viewid:"id-5c26b44cc86d4e7abcb674366c74b7fa", contentid:"id-fad644f302344ea0912c1c99f1d6218e", contenttype:"AssociationRelationship"});
+
+
+
+
+
+
+						    alasql('CREATE TABLE Elements');
+						    alasql('CREATE TABLE Properties');
+						    alasql('CREATE TABLE Relationships');
+						    alasql('CREATE TABLE Views');
+						    alasql('CREATE TABLE ViewsContent');
+						    alasql('CREATE TABLE Folders');
+						    alasql('CREATE TABLE FoldersContent');
+
+						    alasql.tables.Elements.data = dataElements;
+						    alasql.tables.Properties.data = dataProperties;
+						    alasql.tables.Relationships.data = dataRelationships;
+						    alasql.tables.Views.data = dataViews;
+						    alasql.tables.ViewsContent.data = dataViewsContent;
+						    alasql.tables.Folders.data = dataFolders;
+						    alasql.tables.FoldersContent.data = dataFoldersContent;
+						</script> 
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
