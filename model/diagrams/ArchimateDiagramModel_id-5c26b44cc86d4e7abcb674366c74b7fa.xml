@@ -20,7 +20,7 @@
         x="498"
         y="675"
         width="137"
-        height="55"/>
+        height="73"/>
     <archimateElement
         xsi:type="archimate:CourseOfAction"
         href="CourseOfAction_id-e21152b81d174f68b74b2f33a9973d91.xml#id-e21152b81d174f68b74b2f33a9973d91"/>
@@ -71,9 +71,9 @@
     </sourceConnections>
     <bounds
         x="498"
-        y="552"
+        y="536"
         width="137"
-        height="55"/>
+        height="72"/>
     <archimateElement
         xsi:type="archimate:CourseOfAction"
         href="CourseOfAction_id-e67d90fdfb504adfab4df1145266e995.xml#id-e67d90fdfb504adfab4df1145266e995"/>
@@ -84,9 +84,9 @@
       targetConnections="id-3a6da0bbb4884942956caee657105cc9">
     <bounds
         x="696"
-        y="813"
+        y="804"
         width="137"
-        height="55"/>
+        height="73"/>
     <archimateElement
         xsi:type="archimate:CourseOfAction"
         href="CourseOfAction_id-726944ada54843529f3e901ec0a0a708.xml#id-726944ada54843529f3e901ec0a0a708"/>
@@ -349,7 +349,7 @@
     </sourceConnections>
     <bounds
         x="696"
-        y="665"
+        y="674"
         width="137"
         height="73"/>
     <archimateElement
@@ -637,8 +637,8 @@
           href="AssociationRelationship_id-a154bf945a6f4eb98b9f18f11c65883f.xml#id-a154bf945a6f4eb98b9f18f11c65883f"/>
     </sourceConnections>
     <bounds
-        x="888"
-        y="694"
+        x="876"
+        y="703"
         width="15"
         height="15"/>
     <archimateElement
@@ -651,7 +651,7 @@
       targetConnections="id-a175982303fd4c08ad87883fb00a6776">
     <bounds
         x="1164"
-        y="498"
+        y="544"
         width="120"
         height="55"/>
     <archimateElement
@@ -664,7 +664,7 @@
       targetConnections="id-3563c92ba4284e0f825d3eba808fcab8">
     <bounds
         x="1164"
-        y="594"
+        y="607"
         width="120"
         height="55"/>
     <archimateElement
@@ -694,8 +694,8 @@
           href="AssociationRelationship_id-01d37ba310354217a960684b7dfa18c0.xml#id-01d37ba310354217a960684b7dfa18c0"/>
     </sourceConnections>
     <bounds
-        x="1121"
-        y="568"
+        x="1116"
+        y="564"
         width="15"
         height="15"/>
     <archimateElement
