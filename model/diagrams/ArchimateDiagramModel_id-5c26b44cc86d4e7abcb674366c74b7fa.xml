@@ -349,6 +349,11 @@
         id="id-a91f2a531aec4c5a952df3a45e7e9799"
         source="id-3f8401d4c2b64dfc9664a3ab4f774f64"
         target="id-fb641167e66445529a97ae1b74465e77">
+      <bendpoints
+          startX="252"
+          startY="7"
+          endX="-4"
+          endY="-148"/>
       <archimateRelationship
           xsi:type="archimate:AggregationRelationship"
           href="AggregationRelationship_id-c92f168429144ada95e4bcd00928e424.xml#id-c92f168429144ada95e4bcd00928e424"/>
